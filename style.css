@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: twd;
+   src: url(sports_world.zip);
+}
+body{
+    margin: 0;
+    background-color: #221c1c;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+   text-align: center;
+   font-family: twd;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate360 50s infinite forwards;
+}
+
+.imagem{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from{
+        transform: rotateY(0deg);
+    }
+    
+    to{
+      transform: rotateY(360deg);
+    }
+}
+
+.imagem:nth-child(1){
+
+   background-image: url(https://noticiasdatv.uol.com.br/media/_versions/artigos_2023/amc-andrew-lincoln-rick-grimes-1210_fixed_large.jpg);
+
+   transform: rotateY(0deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(2){
+
+    background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2023/06/the-walking-dead-daryl-dixon.jpg);
+ 
+    transform: rotateY(40deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(3){
+
+    background-image: url(https://www.thesun.co.uk/wp-content/uploads/2019/10/NINTCHDBPICT000126410972.jpg);
+ 
+    transform: rotateY(80deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(4){
+
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2021/03/walkingdead_glenn.jpg?quality=90&strip=info&w=720&h=440&crop=1);
+ 
+    transform: rotateY(120deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(5){
+
+    background-image: url(https://trecobox.com.br/wp-content/uploads/2022/08/The-Walking-Dead_11zon.jpeg);
+ 
+    transform: rotateY(160deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(6){
+
+    background-image: url(https://1.bp.blogspot.com/-DEEmrJOttoc/XnlApon-WnI/AAAAAAAAXi8/p--PspvZIKA9GokX2aClrWeDqBdWWaSbgCLcBGAsYHQ/s1600/5e733536235c1840740f8d42.jpeg);
+ 
+    transform: rotateY(200deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(7){
+
+    background-image: url(https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/07/hipertextual-creador-comics-the-walking-dead-conforme-con-cambios-que-ha-sufrido-serie-2020322079.jpg?fit=1500%2C999&quality=50&strip=all&ssl=1);
+ 
+    transform: rotateY(240deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(8){
+
+    background-image: url(https://static1.purebreak.com.br/articles/2/89/24/2/@/339892-em-the-walking-dead-imagens-da-rosita-700x700-1.jpg);
+ 
+    transform: rotateY(280deg) translateZ(430px);
+ 
+ }
+
+ .imagem:nth-child(9){
+
+    background-image: url(https://s.aficionados.com.br/imagens/twd-tudo-que-voce-precisa-saber-sobre-negan_w.jpg);
+ 
+    transform: rotateY(320deg) translateZ(430px);
+ 
+ }
+
+ footer{
+   position: absolute;
+   bottom: 0;
+ }
+
